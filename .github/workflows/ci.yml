@@ -11,5 +11,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Run First Command
-        run: echo "This is my first working CI pipeline"
+      - name: Check HTML File
+        run: Test-Path index.html
+
+      - name: Check CSS File
+        run: Test-Path style.css 
+
+      - name: Check Javascpit File
+        run: Test-Path script.js 
