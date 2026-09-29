@@ -1,0 +1,15 @@
+name: My First CI Pipeline
+
+on:
+  push:
+
+jobs:
+  demo:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run First Command
+        run: echo "This is my first working CI pipeline"
